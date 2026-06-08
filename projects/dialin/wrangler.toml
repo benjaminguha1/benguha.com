@@ -1,0 +1,10 @@
+name = "dialin-benguha-com"
+compatibility_date = "2026-06-01"
+
+routes = [
+  { pattern = "dialin.benguha.com", custom_domain = true },
+  { pattern = "dialin.benguha.com/*", custom_domain = true }
+]
+
+[assets]
+directory = "./public"

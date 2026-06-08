@@ -1,0 +1,15 @@
+name = "benguha-com"
+main = "worker.js"
+compatibility_date = "2026-06-01"
+
+routes = [
+  { pattern = "benguha.com", custom_domain = true },
+  { pattern = "www.benguha.com", custom_domain = true }
+]
+
+kv_namespaces = [
+  { binding = "APPS", id = "d4a5fa87af5e4964ae8bf1bdd3b8c3d6" }
+]
+
+# Set the admin token as a secret (do NOT put it here in plaintext):
+#   wrangler secret put ADMIN_TOKEN
